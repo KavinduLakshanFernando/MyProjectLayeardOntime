@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.*?>
+<AnchorPane prefHeight="766.0" prefWidth="1125.0" style="-fx-background-color: #c0c0c0;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.pos.controller.ManageDriverController">
+   <children>
+      <Rectangle arcHeight="30.0" arcWidth="30.0" fill="WHITE" height="277.0" layoutX="214.0" layoutY="39.0" strokeType="INSIDE" strokeWidth="2.0" width="740.0">
+         <stroke>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.995260663507109">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </stroke></Rectangle>
+      <Text fill="#00000072" layoutX="537.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Driver Details">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Text>
+      <TextField fx:id="Driverid" layoutX="274.0" layoutY="139.0" />
+      <Text fill="#0000007f" layoutX="545.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name :">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="#0000007f" layoutX="782.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address :">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="#0000007f" layoutX="404.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact :">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <TextField fx:id="DriverName" layoutX="546.0" layoutY="139.0" />
+      <TextField fx:id="DriverPhone" layoutX="405.0" layoutY="198.0" />
+      <TextField fx:id="DriverAddress" layoutX="780.0" layoutY="135.0" />
+      <TextField fx:id="txtserchDriver" layoutX="441.0" layoutY="82.0" onAction="#SearchDriverOnAction" prefHeight="25.0" prefWidth="316.0" promptText="Search From Here" />
+      <Text fill="#0000007f" layoutX="276.0" layoutY="133.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Driver NIC :" wrappingWidth="85.42529296875">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="VehicleNumCmb" layoutX="678.0" layoutY="198.0" prefWidth="150.0" />
+      <Text fill="#0000007f" layoutX="678.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vehicle Number :" wrappingWidth="129.42529296875">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <TableView fx:id="DriverTable" layoutX="134.0" layoutY="345.0" prefHeight="390.0" prefWidth="887.0">
+        <columns>
+          <TableColumn fx:id="DriverNicCol" prefWidth="130.0" text="Driver NIC" />
+          <TableColumn fx:id="DriverNameCol" prefWidth="208.80770874023438" text="Name" />
+            <TableColumn fx:id="DriverAddressCol" prefWidth="189.69223022460938" text="Address" />
+            <TableColumn fx:id="DriverContactCol" prefWidth="212.3125" text="Contact" />
+            <TableColumn fx:id="VehicleNumberCol" prefWidth="146.6876220703125" text="Vehicle Number" />
+        </columns>
+      </TableView>
+      <JFXButton buttonType="RAISED" layoutX="701.0" layoutY="248.0" onAction="#ClearDriver" prefHeight="29.0" prefWidth="78.0" style="-fx-background-color: #0466c8; -fx-background-radius: 20;" text="Clear" textFill="WHITE" />
+      <JFXButton buttonType="RAISED" layoutX="597.0" layoutY="248.0" onAction="#DeleteDriver" prefHeight="29.0" prefWidth="78.0" style="-fx-background-color: #0466c8; -fx-background-radius: 20;" text="Delete" textFill="WHITE" />
+      <JFXButton buttonType="RAISED" layoutX="493.0" layoutY="248.0" onAction="#UpdateDriver" prefHeight="29.0" prefWidth="78.0" style="-fx-background-color: #0466c8; -fx-background-radius: 20;" text="Update" textFill="WHITE" />
+      <JFXButton buttonType="RAISED" layoutX="390.0" layoutY="248.0" onAction="#SaveDriver" prefHeight="29.0" prefWidth="78.0" style="-fx-background-color: #0466c8; -fx-background-radius: 20;" text="Add" textFill="WHITE" />
+   </children>
+</AnchorPane>

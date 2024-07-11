@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.MotionBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.*?>
+<AnchorPane fx:id="rootNode" prefHeight="532.0" prefWidth="939.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.pos.controller.LoginFormController">
+   <children>
+      <ImageView fitHeight="533.0" fitWidth="945.0" layoutX="-7.0" layoutY="-1.0" pickOnBounds="true">
+         <image>
+            <Image url="@../icon/loginbg.jpeg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#ffffff29" height="393.0" layoutX="525.0" layoutY="57.0" stroke="#ffffffab" strokeType="INSIDE" width="334.0" />
+      <Text fill="WHITE" layoutX="626.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login">
+         <font>
+            <Font name="System Bold Italic" size="56.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="89.0" layoutY="287.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome To OnTime Cabs!" wrappingWidth="265.373046875">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtUserName" alignment="CENTER" layoutX="593.0" layoutY="215.0" prefHeight="33.0" prefWidth="205.0" style="-fx-background-radius: 20;" />
+      <TextField fx:id="txtPassword" alignment="CENTER" layoutX="593.0" layoutY="271.0" prefHeight="34.0" prefWidth="205.0" style="-fx-background-radius: 20;" />
+      <Text fill="WHITE" layoutX="54.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ontime Cabs" textAlignment="CENTER" wrappingWidth="430.703125">
+         <font>
+            <Font name="System Bold Italic" size="70.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="79.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Destination A Second Away">
+         <font>
+            <Font name="System Italic" size="30.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="605.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="600.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Line endX="106.4000244140625" layoutX="692.0" layoutY="150.0" startX="-100.0" stroke="WHITE">
+         <effect>
+            <MotionBlur />
+         </effect>
+      </Line>
+      <JFXButton layoutX="632.0" layoutY="334.0" onAction="#LoginFormOnAction" prefHeight="36.0" prefWidth="130.0" style="-fx-background-color: white; -fx-background-radius: 20;" text="Login">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
